@@ -1,0 +1,76 @@
+@charset "utf-8"
+
+// 基本設定
+
+nav
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+.wrap
+  margin: 0 auto
+
+header
+  nav
+    ul
+      li
+        +inline-block
+
+#hero
+  .title
+    h1
+      text-align: center
+  .description
+    p
+      &:last-child
+        margin: 0
+    .button
+      display: block
+      width: 60%
+      font-weight: bold
+      text:
+        align: center
+        decoration: none
+      +border-radius(4px)
+      margin: 1.4em auto 0
+
+=columns
+  +display-box // display: box を適用する
+  +box-orient // boxを横並びにする（デフォルト値 horizontal）
+  +box-direction // 子要素の並ばせ方を左から右へ（デフォルト値 normal）
+  +box-align // 子要素の高さの位置設定（デフォルト値 stretch）
+
+.column2
+  +columns
+  >div
+    &.small
+      width: percentage($title-width)
+    &.large
+      width: percentage((1 - $box-side-margin * 2) - $title-width)
+    &:last-child
+      margin: 0 0 0 percentage($box-side-margin)
+
+.columns3
+  $column-number: 3
+  +columns
+  +box-pack(center)
+  >div
+    $box-width: percentage((1 - $box-side-margin * 2) / $column-number) // (全体の幅 - divとdivの間隔)をdivの数で等分
+    width: $box-width
+    +box-sizing(border-box)
+    &:nth-child(2)
+      margin: 0 percentage($box-side-margin)
+
+.column1
+  p
+    &:last-child
+      margin: 0
+
+footer
+  nav
+    text-align: center
+    li
+      +inline-block
+  #copyright
+    text-align: center

@@ -1,0 +1,120 @@
+// テキストの色設定 *****************************************
+
+// 背景 main-color のテキストカラー
+=main-text-color
+  @if lightness($main-color) > 45%
+    color: desaturate(darken($main-color, 64%), 20%)
+  @else
+    color: desaturate(lighten($main-color, 64%), 82%)
+
+// 背景 main-color のテキストカラー
+=base-text-color
+  @if lightness($base-color) > 45%
+    color: desaturate(darken($base-color, 60%), 70%)
+  @else
+    color: desaturate(lighten($base-color, 50%), 80%)
+
+// 背景 accent-color のテキストカラー
+=accent-text-color
+  @if lightness($accent-color) > 45%
+    color: desaturate(darken($accent-color, 60%), 20%)
+  @else
+    color: desaturate(lighten($accent-color, 50%), 80%)
+
+// 色の適用 *****************************************
+
+// body
+body
+  background: $base-color
+  +base-text-color
+
+// header
+header
+  a
+    +base-text-color
+
+// hero
+#hero
+  background: $main-color
+  +main-text-color
+  .button
+    background: $accent-color
+    +accent-text-color
+    &:hover
+      background: lighten($accent-color, 12%)
+
+// feature
+.feature
+  +base-text-color
+
+// gettingstarted
+#gettingstarted
+  background: $base-color
+
+// footer
+footer
+  a
+    +base-text-color
+
+// レイアウト *****************************************
+
+// サイトの最大幅
+.wrap
+  max-width: 1140px
+
+// header
+header
+  padding: 20px 0 // ヘッダの高さ
+  nav
+    ul
+      li
+        margin: 0 1.2em 0 0 // header nav のリンクの間隔
+        a
+          &.logo
+            font-size: 26px // ロゴのフォントサイズ
+            margin: 0 1em 0 0 // ロゴの間隔
+
+// hero
+$box-side-margin: 0.03 // 複数のカラムが横並びの場合の、カラムとカラムの間隔（0.01で1%）（※hero、features 共通）
+$title-width: 0.32 // #hero 内の .title（左カラム） の横幅（0.01で1%）→ 右カラムのサイズは自動で算出
+#hero
+  padding: 120px 0 // #hero の上下の余白
+  margin: 0 0 40px // #hero の下の間隔
+  .title
+    h1
+      font-size: 68px // #hero のタイトルフォントサイズ
+  .description
+    p
+      line-height: 1.4 // .description の本文の行間
+      margin: 0 0 1.2em // .description の本文の段落の下の間隔
+    .button
+      font-size: 26px
+      line-height: 2.2
+
+// features
+#features
+  margin: 0 0 50px // #features の下の間隔
+  .feature
+    h2
+      font-size: 26px // .feature タイトルのフォントサイズ
+      margin: 0 0 0.8em // .feature タイトルの下の間隔
+    p
+      line-height: 1.4 // .feature 本文の行間
+
+// gettingstarted
+#gettingstarted
+  padding: 0 // #gettingstarted の下の間隔
+  h1
+    font-size: 28px // #gettingstarted タイトルのフォントサイズ
+    margin: 0 0 1em // #gettingstarted タイトルの下の間隔
+  p
+    line-height: 1.4 // #gettingstarted 本文の行間
+    margin: 0 0 1.2em // #gettingstarted 本文の段落の下の間隔
+
+// footer
+footer
+  padding: 60px 0  // footer の上下の余白
+  nav
+    margin: 0 0 60px // footer nav の下の間隔
+    li
+      margin: 0 1.2em // footer nav のリンクの間隔

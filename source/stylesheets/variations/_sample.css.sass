@@ -1,0 +1,71 @@
+@charset "utf-8"
+
+// サイトの最大幅
+.wrap
+  max-width: 1140px
+
+// header
+header
+  padding: 20px 0 // ヘッダの高さ
+  nav
+    ul
+      li
+        margin: 0 1.2em 0 0 // header nav のリンクの間隔
+        a
+          color: black // header nav のリンクの色
+        .logo
+          font-size: 26px // ロゴのフォントサイズ
+          margin: 0 1em 0 0 // ロゴの間隔
+          color: black // ロゴの色
+
+// hero
+$box-side-margin: 0.02 // 複数のカラムが横並びの場合の、カラムとカラムの間隔（0.01で1%）（※hero、features 共通）
+$title-width: 0.32 // .title の横幅（0.01で1%）
+#hero
+  padding: 120px 0 // #hero の上下の余白
+  margin: 0 0 40px // #hero の下の間隔
+  background: silver // #hero の背景
+  .title
+    h1
+      font-size: 68px // #hero のタイトルフォントサイズ
+  .description
+    p
+      line-height: 1.4 // .description の本文の行間
+      margin: 0 0 1.2em // .description の本文の段落の下の間隔
+
+
+// features
+#features
+  margin: 0 0 40px // #features の下の間隔
+  .wrap
+    height: 280px // +box-align(stretch)を指定しているため子要素は全てこの高さが適用される
+  .feature
+    border: black solid 1px // .features の border（色、幅、スタイル）
+    padding: 20px // .feature の余白
+    background: silver // .feature の背景
+    h2
+      font-size: 26px // .feature タイトルのフォントサイズ
+      margin: 0 0 0.8em // .feature タイトルの下の間隔
+    p
+      line-height: 1.4 // .feature 本文の行間
+
+// gettingstarted
+#gettingstarted
+  padding: 60px 0 // #gettingstarted の下の間隔
+  background: silver // #gettingstarted の背景
+  h1
+    font-size: 28px // #gettingstarted タイトルのフォントサイズ
+    margin: 0 0 1em // #gettingstarted タイトルの下の間隔
+  p
+    line-height: 1.4 // #gettingstarted 本文の行間
+    margin: 0 0 1.2em // #gettingstarted 本文の段落の下の間隔
+
+// footer
+footer
+  padding: 60px 0  // footer の上下の余白
+  nav
+    margin: 0 0 60px // footer nav の下の間隔
+    li
+      margin: 0 1.2em // footer nav のリンクの間隔
+      a
+        color: black // footer nav のリンクの色
