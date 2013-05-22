@@ -1,26 +1,3 @@
-// テキストの色設定 *****************************************
-
-// 背景 main-color のテキストカラー
-=main-text-color
-  @if lightness($main-color) > 45%
-    color: desaturate(darken($main-color, 64%), 20%)
-  @else
-    color: desaturate(lighten($main-color, 64%), 82%)
-
-// 背景 main-color のテキストカラー
-=base-text-color
-  @if lightness($base-color) > 45%
-    color: desaturate(darken($base-color, 60%), 70%)
-  @else
-    color: desaturate(lighten($base-color, 50%), 80%)
-
-// 背景 accent-color のテキストカラー
-=accent-text-color
-  @if lightness($accent-color) > 45%
-    color: desaturate(darken($accent-color, 60%), 20%)
-  @else
-    color: desaturate(lighten($accent-color, 50%), 80%)
-
 // 色の適用 *****************************************
 
 // body
@@ -41,7 +18,7 @@ header
     background: $accent-color
     +accent-text-color
     &:hover
-      background: lighten($accent-color, 12%)
+      background: lighten($accent-color, 8%)
 
 // feature
 .feature

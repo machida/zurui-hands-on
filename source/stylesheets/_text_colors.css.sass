@@ -1,0 +1,22 @@
+// テキストの色設定 *****************************************
+=text-color($color)
+  @if lightness($color) > 75%
+    color: desaturate(darken($color, 55%), 30%)
+  @else if lightness($color) > 50%
+    color: desaturate(darken($color, 35%), 30%)
+  @else if lightness($color) > 30%
+    color: desaturate(lighten($color, 50%), 30%)
+  @else
+    color: desaturate(lighten($color, 80%), 30%)
+
+// 背景 main-color のテキストカラー
+=main-text-color
+  +text-color($main-color)
+
+// 背景 main-color のテキストカラー
+=base-text-color
+  +text-color($base-color)
+
+// 背景 accent-color のテキストカラー
+=accent-text-color
+  +text-color($accent-color)
