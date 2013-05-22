@@ -1,0 +1,52 @@
+//--------------------------------------------------------------------------------
+// Cheat lines
+
+=zurui-line($position: top, $op1:.2, $op2:.3)
+  @if $position == "top"
+    border-top: 1px solid rgba(0, 0, 0, $op1)
+    +box-shadow(rgba(255, 255, 255, $op2) 0 1px 0 inset)
+  @else if $position == "left"
+    border-left: 1px solid rgba(0, 0, 0, $op1)
+    +box-shadow(rgba(255, 255, 255, $op2) -1px 0 0)
+  @else if $position == "left"
+    border-right: 1px solid rgba(0, 0, 0, $op1)
+    +box-shadow(rgba(255, 255, 255, $op2) -1px 0 0 inset)
+  @else
+    border-bottom: 1px solid rgba(0, 0, 0, $op1)
+    +box-shadow(rgba(255, 255, 255, $op2) 0 1px 0)
+
+//--------------------------------------------------------------------------------
+// Cheat font shadows
+=zurui-ts-000($op:.4)
+  +text-shadow(1px -1px rgba(0, 0, 0, $op))
+
+=zurui-ts-fff($op:.7)
+  +text-shadow(-1px 1px rgba(0, 0, 0, $op))
+
+//--------------------------------------------------------------------------------
+// Cheat gradation
+=zurui-gradient-top-lighten($color:#666, $lighten:10%)
+  background-color: $color
+  +filter-gradient(lighten($color, $lighten), $color, vertical)
+  +background-image(linear-gradient(lighten($color, $lighten) 0%, $color 100%))
+
+=zurui-gradient-top-darken($color:#666, $darken:10%)
+  background-color: $color
+  +filter-gradient(darken($color, $darken), $color, vertical)
+  +background-image(linear-gradient(darken($color, $darken) 0%, $color 100%))
+
+//--------------------------------------------------------------------------------
+// Cheat box shadow
+=zurui-box-outer($op1:2px)
+  +box-shadow(rgba(0, 0, 0, .15) 0 0 $op1)
+
+=zurui-box-inner($op1:20px)
+  +box-shadow(rgba(0, 0, 0, .2) 0 0 $op1 inset)
+
+=zurui-box-deboss($border:.1, $shadow:.1, $highlight:1)
+  border: 1px solid rgba(0, 0, 0, $border)
+  +box-shadow(rgba(0, 0, 0, $shadow) -1px 1px 2px inset, rgba(255, 255, 255, $highlight) -1px 1px 0)
+
+=zurui-box-emboss($border:.15, $shadow:.05, $highlight:1)
+  border: 1px solid rgba(0, 0, 0, $border)
+  +box-shadow(rgba(0, 0, 0, $shadow) -1px 1px 0, rgba(255, 255, 255, $highlight) -1px -1px 0 inset)
