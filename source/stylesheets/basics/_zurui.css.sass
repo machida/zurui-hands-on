@@ -8,7 +8,7 @@
   @else if $position == "left"
     border-left: 1px solid rgba(0, 0, 0, $op1)
     +box-shadow(rgba(255, 255, 255, $op2) -1px 0 0)
-  @else if $position == "left"
+  @else if $position == "right"
     border-right: 1px solid rgba(0, 0, 0, $op1)
     +box-shadow(rgba(255, 255, 255, $op2) -1px 0 0 inset)
   @else
@@ -21,7 +21,7 @@
   +text-shadow(1px -1px rgba(0, 0, 0, $op))
 
 =zurui-ts-fff($op:.7)
-  +text-shadow(-1px 1px rgba(0, 0, 0, $op))
+  +text-shadow(-1px 1px rgba(255, 255, 255, $op))
 
 //--------------------------------------------------------------------------------
 // Cheat gradation
