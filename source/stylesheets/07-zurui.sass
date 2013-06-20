@@ -1,0 +1,33 @@
+@charset "utf-8"
+
+// compass を使う準備
+
+// compassが用意してくれてるresetを使う準備（これは読みこむだけで使える）
+@import compass/reset
+
+// compassが用意してくれてるclearfixやcss spriteを使う準備
+@import compass/utilities
+
+// compassが用意してくれてるcss3を簡単に使う準備
+@import compass/css3
+
+// mixin
+
+// レイアウト
+.wrapper
+  width: 500px
+  padding: 100px
+  margin: 100px auto
+  background: #ccc
+
+h1
+  font:
+    size: 32px
+    weight: bold
+  padding: 0 0 6px
+
+// ズルい線を引いたh1
+
+h1
+  border-bottom: rgba(0, 0, 0, .3) 1px solid
+  +box-shadow(rgba(255, 255, 255, .4) 0px 1px 0px)

@@ -1,0 +1,41 @@
+@charset "utf-8"
+
+// ↓このCSSを
+
+  body {
+    background: black; }
+
+  .wrapper {
+    background: yellow;
+    text-align: center; }
+
+  .wrapper h1 {
+    color: blue;
+    font-size: 24px; }
+
+  .wrapper .description {
+    color: red;
+    font-size: 12px; }
+
+  .wrapper .description strong {
+    color: green;
+    font-size: 14px;
+    font-weight: bold; }
+
+// Sassで書くと？（答えは http://css2sass.heroku.com/ で変換）
+body
+  background: black
+
+.wrapper
+  background: yellow
+  text-align: center
+  h1
+    color: blue
+    font-size: 24px
+  .description
+    color: red
+    font-size: 12px
+    strong
+      color: green
+      font-size: 14px
+      font-weight: bold

@@ -1,0 +1,37 @@
+@charset "utf-8"
+
+// 一旦全てをresetします（外部ファイル「reset.sass」をインポート）
+@import reset
+
+// mixin
+=button($bg-color)
+  display: block
+  width: 300px
+  text-align: center
+  text-decoration: none
+  line-height: 60px
+  margin: 0 0 20px
+  color: white
+  -webkit-border-radius: 6px
+  -moz-border-radius: 6px
+  -ms-border-radius: 6px
+  -o-border-radius: 6px
+  border-radius: 6px
+  background: $bg-color
+
+// レイアウト
+.wrapper
+  width: 300px
+  padding: 100px
+  margin: 0 auto
+
+// ボタンデザイン
+
+.blue-button
+  +button(#3261AB)
+
+.red-button
+  +button(#BF1E56)
+
+.yellow-button
+  +button(#EDAD0B)

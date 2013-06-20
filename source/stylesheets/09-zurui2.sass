@@ -1,0 +1,66 @@
+@charset "utf-8"
+
+// compass を使う準備
+
+// compassが用意してくれてるresetを使う準備（これは読みこむだけで使える）
+@import compass/reset
+
+// compassが用意してくれてるclearfixやcss spriteを使う準備
+@import compass/utilities
+
+// compassが用意してくれてるcss3を簡単に使う準備
+@import compass/css3
+
+// レイアウト
+.wrapper
+  width: 200px
+  padding: 50px
+  margin: 100px auto
+  background: #ccc
+
+//色を変数に
+$blue: #45A1CF
+$red: #C7243A
+$yellow: #F6CA06
+
+// ズルいボタンの設定をmixinにした
+=zurui-button($button-base-color)
+  text-align: center
+  line-height: 2.6
+  padding: 0 1.2em
+  text-decoration: none
+  color: white
+  font-weight: bold
+  +text-shadow(rgba(0, 0, 0, .4) 0 -1px 0)
+  +inline-block
+  +border-radius(6px)
+  +box-shadow(rgba(255, 255, 255, .4) 0 1px 0 inset, rgba(0, 0, 0, .3) 0 1px 2px)
+  &:link,
+  &:visited
+    $button-color: $button-base-color
+    border: darken($button-color, 14%) 1px solid
+    +background-image(linear-gradient($button-color, darken($button-color, 10%)))
+  &:hover
+    $button-color: lighten($button-base-color, 6%)
+    +background-image(linear-gradient($button-color, darken($button-color, 10%)))
+  &:active
+    $button-color: lighten($button-base-color, 8%)
+    +box-shadow(rgba(0, 0, 0, .1) 0 1px 2px inset, rgba(255, 255, 255, .4) 0 1px 0)
+    +background-image(linear-gradient($button-color, darken($button-color, 10%)))
+
+// ズルいボタン
+
+// 青いボタン
+.zurui-button-blue
+  +zurui-button($blue)
+
+// 赤いボタン
+.zurui-button-red
+  +zurui-button($red)
+
+// 黄色いボタン
+.zurui-button-yellow
+  +zurui-button($yellow)
+
+a
+  margin: 0 0 30px
