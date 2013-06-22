@@ -1,5 +1,5 @@
 ---
-title: 変数って何？3
+title: ズルいスイッチ
 layout: basic
 ---
 <!doctype html>
@@ -8,11 +8,7 @@ layout: basic
     %meta{:charset => "utf-8"}/
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
     %title= data.page.title
-    = stylesheet_link_tag "03-basic2"
+    = stylesheet_link_tag "091-zurui"
   %body{:class => page_classes}
     .wrapper
-      %h1 Sassの変数を使ってみよう
-      %p.description
-        %strong
-          変数
-        の書き方をマスター
+      %a.zurui-switch{:href => "#"} Switch

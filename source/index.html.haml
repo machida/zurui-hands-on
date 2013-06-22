@@ -6,48 +6,129 @@ layout: layout
 %header
   %nav.wrap
     %ul
-      %li= link_to "MyApp", "/",{:class => "logo"}
-      %li= link_to "nav-link", "/"
-      %li= link_to "nav-link", "/"
-      %li= link_to "nav-link", "/"
-      %li= link_to "nav-link", "/"
+      %li= link_to "ズルいデザインハンズオン", "/",{:class => "logo"}
 %main
-  #hero
-    .wrap.column2
-      .title.small
-        %h1 MyApp
-      .description.large
-        %p
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        .join
-          =link_to "DOWN LOAD", "/",{:class => "button"}
   #features
     .wrap.columns3
       .feature
-        %h2 Feature
+        %h2
+          %a{:href => "01-basic.html", :target=> "_blank"}
+            01-basic.sass
         %p
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          Sassの基本的な書き方
       .feature
-        %h2 Feature
+        %h2
+          %a{:href => "02-basic.html", :target=> "_blank"}
+            02-basic.sass
         %p
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          Sassの基本的な書き方に挑戦
       .feature
-        %h2 Feature
+        %h2
+          %a{:href => "03-basic.html", :target=> "_blank"}
+            03-basic.sass
         %p
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  #gettingstarted
-    .wrap.column1
-      %h1 Getting Started
-      %p
-        Lorem ipsum dolor sit amet, vix erant fastidii ad. Eu per esse dicat nobis, possim nostrud nam in. Sea ut nonumy detracto, et est probatus erroribus. At nisl possim perfecto duo, ne nec sumo civibus repudiare, simul regione dignissim per te. Eu nobis phaedrum sit. Partiendo persequeris et eam, eu duis omnes pertinax vix.
+          変数って何？
 
-      %p Et vix aliquid interesset scribentur. Sea cu meliore recteque, stet postulant ocurreret usu in. Vis eu ipsum facilisis. Ius ut legendos perpetua vituperatoribus.
+    .wrap.columns3
+      .feature
+        %h2
+          %a{:href => "03-basic2.html", :target=> "_blank"}
+            03-basic2.sass
+        %p
+          変数にした
+      .feature
+        %h2
+          %a{:href => "04-basic.html", :target=> "_blank"}
+            04-basic.sass
+        %p
+          Sassの四則演算
+      .feature
+        %h2
+          %a{:href => "04-basic2.html", :target=> "_blank"}
+            04-basic2.sass
+        %p
+          幅を変数にした
 
-      %p Ius legere essent accommodare te, te qui nisl impedit blandit. Et vide animal intellegebat quo, hinc scaevola ex qui, mei id omnis doming. Ex aliquam dissentiet pro. Ut agam postulant neglegentur sed, te vis minim latine. No quo quas saepe. Te vix omnis laoreet sapientem, qui purto admodum quaerendum no, eu vim deleniti repudiare expetendis.
+    .wrap.columns3
+      .feature
+        %h2
+          %a{:href => "04-basic3.html", :target=> "_blank"}
+            04-basic3.sass
+        %p
+          四則演算を使った
+      .feature
+        %h2
+          %a{:href => "05-basic.html", :target=> "_blank"}
+            05-basic.sass
+        %p
+          Sassのcolor functionsを使う
+      .feature
+        %h2
+          %a{:href => "06-basic.html", :target=> "_blank"}
+            06-basic.sass
+        %p
+          mixinって何？
 
-      %p Rebum docendi te nec. Usu ad saepe accommodare. Pro duis reprimique an, pro tempor conceptam an, facer dolor luptatum vel id. No oporteat signiferumque ius, in sit tota affert bonorum, ius et soleat corrumpit scribentur. Etiam platonem cu sit, nec et epicuri scriptorem, tation tincidunt mediocritatem sed id. Ea vis esse utroque scripserit, erant latine eos ei. Pri vide moderatius ea, ad omnis deleniti offendit sea.
+    .wrap.columns3
+      .feature
+        %h2
+          %a{:href => "06-basic2.html", :target=> "_blank"}
+            06-basic2.sass
+        %p
+          mixinを使った
+      .feature
+        %h2
+          %a{:href => "06-basic3.html", :target=> "_blank"}
+            06-basic3.sass
+        %p
+          mixinに変数を使う
+      .feature
+        %h2
+          %a{:href => "06-basic4.html", :target=> "_blank"}
+            06-basic4.sass
+        %p
+          mixinにifを使う
 
-      %p Elitr propriae vim et. Mazim intellegebat ut eum, cu pri essent deterruisset. An quidam corpora accusata nam, sea ad cibo atomorum. Regione intellegam at nam, id modus utinam mei. Id ridens corpora gubergren eos.
+    .wrap.columns3
+      .feature
+        %h2
+          %a{:href => "07-zurui.html", :target=> "_blank"}
+            07-zurui.sass
+        %p
+          ズルい線
+      .feature
+        %h2
+          %a{:href => "07-zurui2.html", :target=> "_blank"}
+            07-zurui2.sass
+        %p
+          もっと背景が黒い場合のズルい線
+      .feature
+        %h2
+          %a{:href => "08-zurui.html", :target=> "_blank"}
+            08-zurui.sass
+        %p
+          ズルいテキストシャドウ
+
+    .wrap.columns3
+      .feature
+        %h2
+          %a{:href => "08-zurui2.html", :target=> "_blank"}
+            08-zurui2.sass
+        %p
+          もっと背景が黒い場合のズルいテキストシャドウ
+      .feature
+        %h2
+          %a{:href => "09-zurui.html", :target=> "_blank"}
+            09-zurui.sass
+        %p
+          ズルいボタン
+      .feature
+        %h2
+          %a{:href => "09-zurui2.html", :target=> "_blank"}
+            09-zurui2.sass
+        %p
+          ズルいボタンをmixinにする
+
 %footer
   .wrap
     %nav

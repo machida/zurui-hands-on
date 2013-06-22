@@ -1,18 +1,18 @@
 @charset "utf-8"
 
 // 色設定
-$main-color: #b13b23
-$base-color: #FFF
-$accent-color: adjust-hue($main-color, 200)
-$text-color: #4a2d08
+$main-color: #208DC3
+$base-color: #C9E8F1
+$accent-color: #CA3C6E
+$text-color: darken($base-color, 60%)
 
 // body
 body
-  @import url(http://fonts.googleapis.com/css?family=Lato)
-  font-family: 'Lato', Arial, 'メイリオ', Meiryo ,'ヒラギノ角ゴPro W3' ,'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif //ズルいフォント
+  //@import url(http://fonts.googleapis.com/css?family=Lato)
+  //font-family: 'Lato', Arial, 'メイリオ', Meiryo ,'ヒラギノ角ゴPro W3' ,'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif //ズルいフォント
   line-height: 1.6//行間
   background: $base-color
-  background: $base-color url(/images/paper.png)//ズルい背景パターン
+  //background: $base-color url(/images/paper.png)//ズルい背景パターン
   color: $text-color
   +zurui-ts-fff(1) //ズルいテキストシャドウ
   position: relative //ヘッダに影
@@ -48,17 +48,17 @@ header
   li > a
     padding:
       right: 25px
-    +zurui-line-right($op1: .2, $op2: .2) //ズルい線
+    +zurui-line(right, $op1: .2, $op2: .2) //ズルい線
     &.logo
       border: none
       +box-shadow(none)
 
 // hero
 #hero
-  background: #EACB95
-  background: #EACB95 url(/images/purty_wood.png) //ズルい背景パターン
+  background: $main-color
+  // background: #EACB95 url(/images/purty_wood.png) //ズルい背景パターン
   +zurui-ts-fff(.5)  //ズルいテキストシャドウ
-  +zurui-line-bottom($op1: .1, $op2: .2) //ズルい線
+  +zurui-line(bottom, $op1: .1, $op2: .2) //ズルい線
   .button
     background: $accent-color
     +zurui-gradient-top-lighten($accent-color) //ズルいグラデーション
