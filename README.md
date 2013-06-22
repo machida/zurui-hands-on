@@ -3,7 +3,7 @@
 
 ## サンプルファイルの開き方
 
-<pre><code class="bash">build/XXXX.html</code></pre>
+<pre><code class="bash">html/XXXX.html</code></pre>
 
 をブラウザで開く
 

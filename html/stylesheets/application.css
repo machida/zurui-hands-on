@@ -1,79 +1,400 @@
-/*
-Syntax error: File to import not found or unreadable: basics/text_colors.
-              Load paths:
-                /Users/machida/Sites/zurui-hands-on/source/stylesheets
-                /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/blueprint/stylesheets
-                /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets
-                /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-960-plugin-0.10.4/stylesheets
-                /Applications/Scout.app/Contents/Resources/vendor/gems/gems/yui-compass-plugin-0.3/stylesheets
-                /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-h5bp-0.0.5/stylesheets
-                /Applications/Scout.app/Contents/Resources/vendor/gems/gems/zen-grids-1.2/stylesheets
-                Compass::SpriteImporter
-        on line 14 of /Users/machida/Sites/zurui-hands-on/source/stylesheets/application.sass
+@charset "utf-8";
+/* line 17, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-Backtrace:
-/Users/machida/Sites/zurui-hands-on/source/stylesheets/application.sass:14
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/import_node.rb:64:in `import'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/import_node.rb:62:in `import'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/import_node.rb:25:in `imported_file'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-org/jruby/RubyKernel.java:2096:in `send'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-org/jruby/RubyArray.java:2336:in `collect'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `visit_children'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
-org/jruby/RubyKernel.java:2096:in `send'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-org/jruby/RubyKernel.java:2096:in `send'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-org/jruby/RubyMethod.java:133:in `call'
-org/jruby/RubyProc.java:268:in `call'
-org/jruby/RubyProc.java:228:in `call'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `modified'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyArray.java:1603:in `each'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `run'
-org/jruby/RubyKernel.java:1419:in `loop'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Applications/Scout.app/Contents/Resources/bin/compass:12:in `(root)'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: basics/text_colors.\A               Load paths:\A                 /Users/machida/Sites/zurui-hands-on/source/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-960-plugin-0.10.4/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/yui-compass-plugin-0.3/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-h5bp-0.0.5/stylesheets\A                 /Applications/Scout.app/Contents/Resources/vendor/gems/gems/zen-grids-1.2/stylesheets\A                 Compass::SpriteImporter\A         on line 14 of /Users/machida/Sites/zurui-hands-on/source/stylesheets/application.sass"; }
+/* line 22, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../../source/stylesheets/zurui/_tryout.sass */
+body {
+  line-height: 1.6;
+  background: #c9e8f1;
+  color: #1c5a6c;
+  text-shadow: -1px 1px white;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 21, ../../source/stylesheets/zurui/_tryout.sass */
+a {
+  text-decoration: none;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: #208dc3;
+  text-decoration: none;
+}
+/* line 26, ../../source/stylesheets/zurui/_tryout.sass */
+a:hover {
+  color: #196d97;
+  text-decoration: none;
+}
+
+/* line 31, ../../source/stylesheets/zurui/_tryout.sass */
+h1, h2 {
+  color: #208dc3;
+  font-weight: bold;
+}
+
+/* line 36, ../../source/stylesheets/zurui/_tryout.sass */
+header {
+  background: #208dc3;
+  background-color: #208dc3;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF38A7DE', endColorstr='#FF208DC3');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #38a7de), color-stop(100%, #208dc3));
+  background-image: -webkit-linear-gradient(#38a7de 0%, #208dc3 100%);
+  background-image: -moz-linear-gradient(#38a7de 0%, #208dc3 100%);
+  background-image: -o-linear-gradient(#38a7de 0%, #208dc3 100%);
+  background-image: linear-gradient(#38a7de 0%, #208dc3 100%);
+  border-bottom: 1px solid #196d97;
+  text-shadow: 1px -1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
+}
+/* line 44, ../../source/stylesheets/zurui/_tryout.sass */
+header a {
+  color: white;
+}
+/* line 46, ../../source/stylesheets/zurui/_tryout.sass */
+header a:hover {
+  color: #e6e6e6;
+}
+/* line 48, ../../source/stylesheets/zurui/_tryout.sass */
+header li > a {
+  padding-right: 25px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) -1px 0 0 inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.2) -1px 0 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.2) -1px 0 0 inset;
+}
+/* line 52, ../../source/stylesheets/zurui/_tryout.sass */
+header li > a.logo {
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 57, ../../source/stylesheets/zurui/_tryout.sass */
+#hero {
+  background: #208dc3;
+  text-shadow: -1px 1px rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
+  -moz-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0;
+}
+/* line 62, ../../source/stylesheets/zurui/_tryout.sass */
+#hero .button {
+  background: #ca3c6e;
+  background-color: #ca3c6e;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFD5648C', endColorstr='#FFCA3C6E');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d5648c), color-stop(100%, #ca3c6e));
+  background-image: -webkit-linear-gradient(#d5648c 0%, #ca3c6e 100%);
+  background-image: -moz-linear-gradient(#d5648c 0%, #ca3c6e 100%);
+  background-image: -o-linear-gradient(#d5648c 0%, #ca3c6e 100%);
+  background-image: linear-gradient(#d5648c 0%, #ca3c6e 100%);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px -1px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 0, rgba(255, 255, 255, 0.2) -1px -1px 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 0, rgba(255, 255, 255, 0.2) -1px -1px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 0, rgba(255, 255, 255, 0.2) -1px -1px 0 inset;
+}
+/* line 68, ../../source/stylesheets/zurui/_tryout.sass */
+#hero .button:hover {
+  background: #cf507d;
+  background-color: #cf507d;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFDA789B', endColorstr='#FFCF507D');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #da789b), color-stop(100%, #cf507d));
+  background-image: -webkit-linear-gradient(#da789b 0%, #cf507d 100%);
+  background-image: -moz-linear-gradient(#da789b 0%, #cf507d 100%);
+  background-image: -o-linear-gradient(#da789b 0%, #cf507d 100%);
+  background-image: linear-gradient(#da789b 0%, #cf507d 100%);
+  color: white;
+}
+
+/* line 76, ../../source/stylesheets/zurui/_tryout.sass */
+.wrap {
+  max-width: 1140px;
+  padding: 30px 0;
+}
+
+/* line 81, ../../source/stylesheets/zurui/_tryout.sass */
+header {
+  padding: 20px 0;
+}
+/* line 85, ../../source/stylesheets/zurui/_tryout.sass */
+header nav ul li {
+  margin: 0 1.2em 0 0;
+}
+/* line 88, ../../source/stylesheets/zurui/_tryout.sass */
+header nav ul li a.logo {
+  font-size: 26px;
+  margin: 0 1em 0 0;
+}
+
+/* line 95, ../../source/stylesheets/zurui/_tryout.sass */
+#hero {
+  padding: 120px 0;
+  margin: 0 0 40px;
+}
+/* line 99, ../../source/stylesheets/zurui/_tryout.sass */
+#hero .title h1 {
+  font-size: 68px;
+}
+/* line 102, ../../source/stylesheets/zurui/_tryout.sass */
+#hero .description p {
+  line-height: 1.4;
+  margin: 0 0 1.2em;
+}
+/* line 105, ../../source/stylesheets/zurui/_tryout.sass */
+#hero .description .button {
+  font-size: 26px;
+  line-height: 2.2;
+}
+
+/* line 110, ../../source/stylesheets/zurui/_tryout.sass */
+#features {
+  margin: 0 0 50px;
+}
+/* line 113, ../../source/stylesheets/zurui/_tryout.sass */
+#features .feature h2 {
+  font-size: 26px;
+  margin: 0 0 0.8em;
+}
+/* line 116, ../../source/stylesheets/zurui/_tryout.sass */
+#features .feature p {
+  line-height: 1.4;
+}
+
+/* line 120, ../../source/stylesheets/zurui/_tryout.sass */
+#gettingstarted {
+  padding: 0;
+}
+/* line 122, ../../source/stylesheets/zurui/_tryout.sass */
+#gettingstarted h1 {
+  font-size: 28px;
+  margin: 0 0 1em;
+}
+/* line 125, ../../source/stylesheets/zurui/_tryout.sass */
+#gettingstarted p {
+  line-height: 1.4;
+  margin: 0 0 1.2em;
+}
+
+/* line 130, ../../source/stylesheets/zurui/_tryout.sass */
+footer {
+  padding: 60px 0;
+}
+/* line 132, ../../source/stylesheets/zurui/_tryout.sass */
+footer nav {
+  margin: 0 0 60px;
+}
+/* line 134, ../../source/stylesheets/zurui/_tryout.sass */
+footer nav li {
+  margin: 0 1.2em;
+}
+
+/* line 6, ../../source/stylesheets/basics/_basic.sass */
+nav a {
+  text-decoration: none;
+}
+/* line 8, ../../source/stylesheets/basics/_basic.sass */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* line 11, ../../source/stylesheets/basics/_basic.sass */
+.wrap {
+  margin: 0 auto;
+}
+
+/* line 17, ../../source/stylesheets/basics/_basic.sass */
+header nav ul li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 22, ../../source/stylesheets/basics/_basic.sass */
+#hero .title h1 {
+  text-align: center;
+}
+/* line 26, ../../source/stylesheets/basics/_basic.sass */
+#hero .description p:last-child {
+  margin: 0;
+}
+/* line 28, ../../source/stylesheets/basics/_basic.sass */
+#hero .description .button {
+  display: block;
+  width: 60%;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  margin: 1.4em auto 0;
+}
+
+/* line 44, ../../source/stylesheets/basics/_basic.sass */
+.column2 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -ms-box-direction: normal;
+  box-direction: normal;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -ms-box-align: stretch;
+  box-align: stretch;
+}
+/* line 47, ../../source/stylesheets/basics/_basic.sass */
+.column2 > div.small {
+  width: 32%;
+}
+/* line 49, ../../source/stylesheets/basics/_basic.sass */
+.column2 > div.large {
+  width: 62.0%;
+}
+/* line 51, ../../source/stylesheets/basics/_basic.sass */
+.column2 > div:last-child {
+  margin: 0 0 0 3%;
+}
+
+/* line 54, ../../source/stylesheets/basics/_basic.sass */
+.columns3 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -ms-box-direction: normal;
+  box-direction: normal;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -ms-box-align: stretch;
+  box-align: stretch;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+}
+/* line 58, ../../source/stylesheets/basics/_basic.sass */
+.columns3 > div {
+  width: 31.33333%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 62, ../../source/stylesheets/basics/_basic.sass */
+.columns3 > div:nth-child(2) {
+  margin: 0 3%;
+}
+
+/* line 67, ../../source/stylesheets/basics/_basic.sass */
+.column1 p:last-child {
+  margin: 0;
+}
+
+/* line 71, ../../source/stylesheets/basics/_basic.sass */
+footer nav {
+  text-align: center;
+}
+/* line 73, ../../source/stylesheets/basics/_basic.sass */
+footer nav li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 75, ../../source/stylesheets/basics/_basic.sass */
+footer #copyright {
+  text-align: center;
+}
