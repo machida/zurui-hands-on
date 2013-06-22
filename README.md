@@ -1,4 +1,3 @@
-
 # 静的なファイルをいじる場合
 
 ## サンプルファイルの開き方
@@ -21,7 +20,7 @@
 
 ### output（cssが生成される場所）
 
-<pre><code class="bash">build/stylesheets</code></pre>
+<pre><code class="bash">html/stylesheets</code></pre>
 
 # middlemanを使う場合
 
