@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* line 4, ../../source/stylesheets/03-basic2.sass */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 11, ../../source/stylesheets/03-basic2.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 13, ../../source/stylesheets/03-basic2.sass */
+body {
+  line-height: 1;
+}
+
+/* line 15, ../../source/stylesheets/03-basic2.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 17, ../../source/stylesheets/03-basic2.sass */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 20, ../../source/stylesheets/03-basic2.sass */
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 24, ../../source/stylesheets/03-basic2.sass */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 27, ../../source/stylesheets/03-basic2.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 40, ../../source/stylesheets/03-basic2.sass */
+.wrapper {
+  width: 600px;
+  background: #1f91be;
+  margin: 80px auto;
+}
+/* line 44, ../../source/stylesheets/03-basic2.sass */
+.wrapper h1 {
+  font-size: 38px;
+  font-weight: bold;
+  color: #fbe481;
+  text-align: center;
+  padding: 40px 0;
+}
+/* line 51, ../../source/stylesheets/03-basic2.sass */
+.wrapper .description {
+  text-align: center;
+  padding: 0 0 40px;
+  color: white;
+  font-size: 16px;
+}
+/* line 56, ../../source/stylesheets/03-basic2.sass */
+.wrapper .description strong {
+  font-weight: bold;
+  color: #f4d2de;
+}

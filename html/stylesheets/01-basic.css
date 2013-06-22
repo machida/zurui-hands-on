@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* line 21, ../../source/stylesheets/01-basic.sass */
+body {
+  background: black;
+}
+
+/* line 23, ../../source/stylesheets/01-basic.sass */
+h1 {
+  color: yellow;
+  text-align: center;
+}
+
+/* line 26, ../../source/stylesheets/01-basic.sass */
+p {
+  color: red;
+  text-align: center;
+}
+/* line 29, ../../source/stylesheets/01-basic.sass */
+p span {
+  color: green;
+}

@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* line 1, ../../source/stylesheets/reset.sass */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 8, ../../source/stylesheets/reset.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 10, ../../source/stylesheets/reset.sass */
+body {
+  line-height: 1;
+}
+
+/* line 12, ../../source/stylesheets/reset.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 14, ../../source/stylesheets/reset.sass */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 17, ../../source/stylesheets/reset.sass */
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 21, ../../source/stylesheets/reset.sass */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 24, ../../source/stylesheets/reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 15, ../../source/stylesheets/05-basic.sass */
+.wrapper {
+  width: 786px;
+  margin: 0 auto;
+}
+/* line 18, ../../source/stylesheets/05-basic.sass */
+.wrapper div {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  margin: 30px;
+  text-align: center;
+  float: left;
+  border: 1px solid black;
+}
+
+/* line 32, ../../source/stylesheets/05-basic.sass */
+.color-1 {
+  background: #377fa3;
+}
+
+/* line 35, ../../source/stylesheets/05-basic.sass */
+.color-2 {
+  background: #69b1d5;
+}
+
+/* line 38, ../../source/stylesheets/05-basic.sass */
+.color-3 {
+  background: #71b0cf;
+}
+
+/* line 41, ../../source/stylesheets/05-basic.sass */
+.color-4 {
+  background: #1d4457;
+}
+
+/* line 44, ../../source/stylesheets/05-basic.sass */
+.color-5 {
+  background: #168ac4;
+}
+
+/* line 47, ../../source/stylesheets/05-basic.sass */
+.color-6 {
+  background: #587482;
+}
+
+/* line 50, ../../source/stylesheets/05-basic.sass */
+.color-7 {
+  background: #a35b37;
+}
+
+/* line 53, ../../source/stylesheets/05-basic.sass */
+.color-8 {
+  background: #6d6d6d;
+}
+
+/* line 56, ../../source/stylesheets/05-basic.sass */
+.color-9 {
+  background: #a35b37;
+}
