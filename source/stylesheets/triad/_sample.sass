@@ -14,7 +14,7 @@ body
   background: $base-color
   //background: $base-color url(/images/paper.png)//ズルい背景パターン
   color: $text-color
-  +zurui-ts-fff(1) //ズルいテキストシャドウ
+  +zurui-ts-fff(.6) //ズルいテキストシャドウ
   position: relative //ヘッダに影
   z-index: 1 //ヘッダに影
 
@@ -37,14 +37,14 @@ header
   background: $base-color
   +zurui-gradient-top-lighten($base-color, 10%) //ズルいグラデーション
   border-bottom: 1px solid darken($base-color, 10%)
-  +zurui-ts-000(.3) //ズルいテキストシャドウ
+  +zurui-ts-fff(.6) //ズルいテキストシャドウ
   position: relative //ヘッダに影
   z-index: 2 //ヘッダに影
   +box-shadow(rgba(0,0,0,.2) 0 2px 5px) //ヘッダに影
   a
-    color: white
+    color: $text-color
     &:hover
-      color: darken(white, 10%)
+      color: darken($text-color, 10%)
   li > a
     padding:
       right: 25px
@@ -57,13 +57,13 @@ header
 #hero
   background: $main-color
   // background: #EACB95 url(/images/purty_wood.png) //ズルい背景パターン
-  +zurui-ts-fff(.5)  //ズルいテキストシャドウ
+  +zurui-ts-fff(.4)  //ズルいテキストシャドウ
   +zurui-line(bottom, $op1: .1, $op2: .2) //ズルい線
   .button
     background: $accent-color
     +zurui-gradient-top-lighten($accent-color) //ズルいグラデーション
     color: rgba(255, 255, 255, .9)
-    +zurui-ts-000(.3)//ズルいテキストシャドウ
+    +zurui-ts-000(.6)//ズルいテキストシャドウ
     +zurui-box-emboss($border: .3, $shadow: .1, $highlight: .2) //ズルいボックスシャドウ
     &:hover
       background: lighten($accent-color, 5%)
