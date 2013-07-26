@@ -1,0 +1,134 @@
+@charset "utf-8"
+
+// 色設定
+$main-color: #13AA98
+$base-color: #F7D020
+$accent-color: #AF3381
+$text-color: darken($base-color, 60%)
+
+// body
+body
+  //@import url(http://fonts.googleapis.com/css?family=Lato)
+  //font-family: 'Lato', Arial, 'メイリオ', Meiryo ,'ヒラギノ角ゴPro W3' ,'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif //ズルいフォント
+  line-height: 1.6//行間
+  background: $base-color
+  //background: $base-color url(/images/paper.png)//ズルい背景パターン
+  color: $text-color
+  +zurui-ts-fff(.6) //ズルいテキストシャドウ
+  position: relative //ヘッダに影
+  z-index: 1 //ヘッダに影
+
+a
+  text-decoration: none
+  +transition-duration(.3s)
+  color: $main-color
+  text-decoration: none
+  &:hover
+    color: darken($main-color, 10%)
+    text-decoration: none
+
+// headings
+h2
+  color: $main-color
+  font-weight: bold
+
+// header
+header
+  background: $base-color
+  +zurui-gradient-top-lighten($base-color, 10%) //ズルいグラデーション
+  border-bottom: 1px solid darken($base-color, 10%)
+  +zurui-ts-fff(.6) //ズルいテキストシャドウ
+  position: relative //ヘッダに影
+  z-index: 2 //ヘッダに影
+  +box-shadow(rgba(0,0,0,.2) 0 2px 5px) //ヘッダに影
+  a
+    color: $text-color
+    &:hover
+      color: darken($text-color, 10%)
+  li > a
+    padding:
+      right: 25px
+    +zurui-line(right, $op1: .2, $op2: .2) //ズルい線
+    &.logo
+      border: none
+      +box-shadow(none)
+
+// hero
+#hero
+  background: $main-color
+  // background: #EACB95 url(/images/purty_wood.png) //ズルい背景パターン
+  +zurui-ts-fff(.4)  //ズルいテキストシャドウ
+  +zurui-line(bottom, $op1: .1, $op2: .2) //ズルい線
+  .button
+    background: $accent-color
+    +zurui-gradient-top-lighten($accent-color) //ズルいグラデーション
+    color: rgba(255, 255, 255, .9)
+    +zurui-ts-000(.6)//ズルいテキストシャドウ
+    +zurui-box-emboss($border: .3, $shadow: .1, $highlight: .2) //ズルいボックスシャドウ
+    &:hover
+      background: lighten($accent-color, 5%)
+      +zurui-gradient-top-lighten(lighten($accent-color, 5%)) //ズルいグラデーション
+      color: rgba(255, 255, 255, 1)
+
+// レイアウト *****************************************
+
+// サイトの最大幅
+.wrap
+  max-width: 1140px
+
+// header
+header
+  padding: 20px 0 // ヘッダの高さ
+  nav
+    ul
+      li
+        margin: 0 1.2em 0 0 // header nav のリンクの間隔
+        a
+          &.logo
+            font-size: 26px // ロゴのフォントサイズ
+            margin: 0 1em 0 0 // ロゴの間隔
+
+// hero
+$box-side-margin: 0.03 // 複数のカラムが横並びの場合の、カラムとカラムの間隔（0.01で1%）（※hero、features 共通）
+$title-width: 0.32 // #hero 内の .title（左カラム） の横幅（0.01で1%）→ 右カラムのサイズは自動で算出
+#hero
+  padding: 120px 0 // #hero の上下の余白
+  margin: 0 0 40px // #hero の下の間隔
+  .title
+    h1
+      font-size: 68px // #hero のタイトルフォントサイズ
+  .description
+    p
+      line-height: 1.4 // .description の本文の行間
+      margin: 0 0 1.2em // .description の本文の段落の下の間隔
+    .button
+      font-size: 26px
+      line-height: 2.2
+
+// features
+#features
+  margin: 0 0 50px // #features の下の間隔
+  .feature
+    h2
+      font-size: 26px // .feature タイトルのフォントサイズ
+      margin: 0 0 0.8em // .feature タイトルの下の間隔
+    p
+      line-height: 1.4 // .feature 本文の行間
+
+// gettingstarted
+#gettingstarted
+  padding: 0 // #gettingstarted の下の間隔
+  h2
+    font-size: 28px // #gettingstarted タイトルのフォントサイズ
+    margin: 0 0 1em // #gettingstarted タイトルの下の間隔
+  p
+    line-height: 1.4 // #gettingstarted 本文の行間
+    margin: 0 0 1.2em // #gettingstarted 本文の段落の下の間隔
+
+// footer
+footer
+  padding: 60px 0  // footer の上下の余白
+  nav
+    margin: 0 0 60px // footer nav の下の間隔
+    li
+      margin: 0 1.2em // footer nav のリンクの間隔
